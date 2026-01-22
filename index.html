@@ -152,6 +152,61 @@ footer p{
  font-size:17px;
  line-height:2;
 }
+<style>
+  /* CSS الموقع الحالي */
+
+  /* زر عرض الخطة */
+  .tree-btn{
+    margin: 40px auto;
+    padding: 16px 40px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    background: linear-gradient(90deg,#00f5ff,#8b5cf6);
+    box-shadow: 0 0 25px rgba(0,245,255,.6);
+    transition: .3s;
+  }
+  .tree-btn:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 45px rgba(139,92,246,.9);
+  }
+
+  .modal{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.85);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .modal img{
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 18px;
+    box-shadow: 0 0 60px rgba(0,245,255,.8);
+    animation: zoom .4s ease;
+  }
+
+  .close{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 42px;
+    color: #00f5ff;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  @keyframes zoom{
+    from{transform:scale(.6);opacity:0}
+    to{transform:scale(1);opacity:1}
+  }
+</style> 
 </style>
 </head>
 <body>
